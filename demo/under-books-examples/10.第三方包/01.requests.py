@@ -10,6 +10,8 @@ if __name__ == '__main__':
     print(r.json())
 
     r = requests.get('https://jsonplaceholder.typicode.com/comments', params={'postId': 1})
+    print(r.content)
+
 
 # r = requests.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20%3D%202151330&format=json')
 # r.text
