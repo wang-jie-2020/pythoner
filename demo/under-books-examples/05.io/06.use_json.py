@@ -1,5 +1,12 @@
 """
     "因为默认情况下，dumps()方法不知道如何将Student实例变为一个JSON的{}对象" --- 这不弱智吗 ?  不可能吧...
+
+    `json`模块有四个比较重要的函数，分别是：
+        - `dump` - 将Python对象按照JSON格式序列化到文件中
+        - `dumps` - 将Python对象处理成JSON格式的字符串
+        - `load` - 将文件中的JSON数据反序列化成对象
+        - `loads` - 将字符串的内容反序列化成Python对象
+
 """
 import json
 
