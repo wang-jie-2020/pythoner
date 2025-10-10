@@ -1,26 +1,21 @@
-def method1():
-
-    classmates = ('Michael', 'Bob', 'Tracy')
-    print('classmates =', classmates)
-    print('len(classmates) =', len(classmates))
-    print('classmates[0] =', classmates[0])
-    print('classmates[1] =', classmates[1])
-    print('classmates[2] =', classmates[2])
-    print('classmates[-1] =', classmates[-1])
-
+def tupleImmutable():
+    classmates = ('Michael', 'Bob', 'Tracy', ['A', 'B'])
     try:
         classmates[0] = 'Adam'
         print('classmates =', classmates)
     except Exception as e:
         print(e)
 
-def method2():
-    t = ('a', 'b', ['A', 'B'])
-    t[2][0] = 'X'
-    t[2][1] = 'Y'
-    print(t)
+    try:
+        classmates[3][0] = 'X'
+        classmates[3][1] = 'Y'
+        print('classmates =', classmates)
+    except Exception as e:
+        print(e)
 
-if __name__ == '__main__':
-    method1()
-    print('----')
-    method2()
+tupleImmutable()
+
+
+
+#  不可变性    immutability
+#   可变性     variability
