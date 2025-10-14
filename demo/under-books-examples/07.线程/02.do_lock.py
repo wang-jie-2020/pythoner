@@ -8,16 +8,12 @@ def change_it(n):
     balance = balance + n
     balance = balance - n
 
-
 def run_thread(n):
     for i in range(100000):
-        # 鍏堣鑾峰彇閿�:
         lock.acquire()
         try:
-            # 鏀惧績鍦版敼鍚�:
             change_it(n)
         finally:
-            # 鏀瑰畬浜嗕竴瀹氳閲婃斁閿�:
             lock.release()
 
 if __name__ == '__main__':

@@ -13,7 +13,6 @@ def process_student():
 
 
 def process_thread(name):
-    # 缁戝畾ThreadLocal鐨剆tudent:
     local_school.student = name
     process_student()
 
